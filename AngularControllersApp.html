@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<header>
+</header>
+<title> angular controller example</title>
+
+<body ng-app="myApp">
+<div ng-controller="StudentController">
+    <intput type="text" id="studentNameTextbox" ng-model="StudentName"/>
+    <intput type="text" id="studentTextEmailidTextbox" ng-model="StudenEmaildId"/>
+    <intput type="text" id="studentPhoneNumberTextbox" ng-model="StudentPhonenumber"/>
+</div>
+<div>
+<table style="width: 80%">
+    <tr>
+    <th> Customer name </th>
+    <th> Customer email id </th>
+    <th> Customer phone number </th>
+    </tr>
+        <tr>
+        <td>{{StudentName }} </td>
+        <td>{{StudenEmaildId }} </td>
+        <td>{{StudentPhonenumber }} </td>
+    </tr>
+    
+</div>
+
+</body>
+<script src="node_modules/angular/angular.js"></script>
+<script >
+
+</script>
+</html>

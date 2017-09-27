@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title> my angular arrays</title>
+<body ng-app='studentapp'>
+    <div id='Student' ng-controller='studentController'>
+      <h3>Grocery List</h3>
+        <div ng-repeat='x in lst'>
+          <h4>{{x.item}}</h4>
+        </div>
+      <br>
+     
+   <p> enter Student name:
+   <input type="text" ng-model='addstudentName'/>
+   </p>
+   <button ng-click='addTolist(addstudentName)'>Add to list</button>
+    <h2>{{NoItemError}}</h2>
+    </div> <!-- End of Grocery -->
+
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script>
+var app1 = angular.module('studentapp', []);
+app1.controller('studentController', function($scope) {
+$scope.lst = [
+{item:'sandeep', needed:false},
+{item: 'babu', needed:false},
+{item:'avinash', needed:false},
+{item: 'ravi', needed:false},
+{item:'narendra', needed:false}
+]
+$scope.addTolist = function(addItem){
+ if (!(addItem === undefined || addItem === '')){
+     $scope.lst.push({item: addItem, needed: false});
+     $scope.NoItemError = '';
+     } else {
+        $scope.NoItemError = 'Please enter a student name';
+            }
+}
+});
+
+</script>
+
