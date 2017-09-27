@@ -3,8 +3,8 @@
 <title> my angular arrays</title>
 <body ng-app='studentapp'>
     <div id='Student' ng-controller='studentController'>
-      <h3>Grocery List</h3>
-        <div ng-repeat='x in lst'>
+      <h3>Student Names</h3>
+        <div ng-repeat='x in studentList'>
           <h4>{{x.item}}</h4>
         </div>
       <br>
@@ -13,8 +13,8 @@
    <input type="text" ng-model='addstudentName'/>
    </p>
    <button ng-click='addTolist(addstudentName)'>Add to list</button>
-    <h2>{{NoItemError}}</h2>
-    </div> <!-- End of Grocery -->
+    <h2>{{NoStudentError}}</h2>
+    </div> <!-- End of Student -->
 
 </body>
 </html>
@@ -22,7 +22,7 @@
  <script>
 var app1 = angular.module('studentapp', []);
 app1.controller('studentController', function($scope) {
-$scope.lst = [
+$scope.studentList = [
 {item:'sandeep', needed:false},
 {item: 'babu', needed:false},
 {item:'avinash', needed:false},
@@ -31,10 +31,10 @@ $scope.lst = [
 ]
 $scope.addTolist = function(addItem){
  if (!(addItem === undefined || addItem === '')){
-     $scope.lst.push({item: addItem, needed: false});
+     $scope.studentList.push({item: addItem, needed: false});
      $scope.NoItemError = '';
      } else {
-        $scope.NoItemError = 'Please enter a student name';
+        $scope.NoStudentError = 'Please enter a student name';
             }
 }
 });
