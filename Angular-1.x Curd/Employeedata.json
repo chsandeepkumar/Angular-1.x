@@ -1,20 +1,20 @@
 [{
     "id": 1,
-    "name": "Niladri Biswas",
+    "name": "Sandeep Kumar",
     "gender":"Male",
     "photo":"images/1.jpg",
     "english": 80,
     "maths": 75
   }, {
    "id": 2,
-    "name": "Arina Biswas",
-    "gender":"Female",
+    "name": "Babu rao T",
+    "gender":"Male",
     "photo":"images/2.jpg",
    "english": 70,
    "maths": 69
   }, {
    "id": 3,
-     "name": "Rajlaxmi Biswas",
+     "name": "Narendra V",
      "gender":"Female",
      "photo":"images/3.jpg",
    "english": 98,
@@ -22,7 +22,7 @@
   },
   {
    "id": 4,
-     "name": "RNA Team",
+     "name": "MS Team",
      "gender":"Male",
      "photo":"images/4.jpg",
    "english": 88,
