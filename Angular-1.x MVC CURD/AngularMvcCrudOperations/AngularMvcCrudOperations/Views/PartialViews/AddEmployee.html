@@ -1,0 +1,30 @@
+﻿<h1>Add Employee</h1>
+
+
+<form name="AddEmployeeForm" ng-submit="addEmployee();">
+    <table>
+        <tr>
+            <td> Employee Name :</td>
+            <td> <input type="text" ng-model="employee.Name"/></td>
+        </tr>
+        <tr>
+            <td> Employee Age :</td>
+            <td> <input type="text" ng-model="employee.Age" /></td>
+        </tr>
+        <tr>
+            <td> Employee State :</td>
+            <td> <input type="text" ng-model="employee.State" /></td>
+        </tr>
+        <tr>
+            <td> Employee Country :</td>
+            <td> <input type="text" ng-model="employee.NameCountry" /></td>
+        </tr>
+        <tr>
+            <td> Employee ZipCode :</td>
+            <td> <input type="text" ng-model="employee.ZipCode" /></td>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+</form>
