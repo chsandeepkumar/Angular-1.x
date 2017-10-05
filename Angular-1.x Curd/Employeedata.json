@@ -1,0 +1,30 @@
+[{
+    "id": 1,
+    "name": "Niladri Biswas",
+    "gender":"Male",
+    "photo":"images/1.jpg",
+    "english": 80,
+    "maths": 75
+  }, {
+   "id": 2,
+    "name": "Arina Biswas",
+    "gender":"Female",
+    "photo":"images/2.jpg",
+   "english": 70,
+   "maths": 69
+  }, {
+   "id": 3,
+     "name": "Rajlaxmi Biswas",
+     "gender":"Female",
+     "photo":"images/3.jpg",
+   "english": 98,
+   "maths": 100
+  },
+  {
+   "id": 4,
+     "name": "RNA Team",
+     "gender":"Male",
+     "photo":"images/4.jpg",
+   "english": 88,
+   "maths": 70
+  }]

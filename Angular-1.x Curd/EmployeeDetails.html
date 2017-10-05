@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title> Angular CURD operations</title>
+<script src="node_modules/angular/angular.js"></script>
+<script src="EmployeeController.js"></script>
+<body ng-app="employeeApp">
+<div align="center"><b> Employee Information</b></div>
+<div ng-controller="employeeController" align="center">
+<table border="1">
+ <tr>         
+<th>Name</th> 
+<th>Photo</th>                 
+<th>Gender</th>
+<th>English</th>
+<th>Maths</th>
+<th>Combined Marks in English and Maths</th>                      
+</tr>
+<tr ng-repeat="employee in employees">
+    <td><span>{{employee.name}}</span></td>    
+    <td><span><img src={{employee.photo}} width="100px" height="100px" /></span></td>                 
+    <td><span>{{employee.gender}}</span></td>
+    <td><span>{{employee.english}}</span></td>
+    <td><span>{{employee.maths}}</span></td> 
+    <td><span>{{ (employee.english)--(employee.maths) }}</span></td> 
+</tr>
+</table>
+</div>
+</body>
+</html>

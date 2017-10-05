@@ -1,0 +1,11 @@
+{
+  "name": "angularcurdoperations",
+  "version": "1.0.0",
+  "description": "this is angular which will read the data json file",
+  "main": "EmployeeController.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep kumar ch",
+  "license": "ISC"
+}
